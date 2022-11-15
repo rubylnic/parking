@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Автостоянка 24">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Автостоянка 24</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/play-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/play-bold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__upper">
+        <div class="header__left">
+          <button class="header__burger" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="header__cross hidden" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="/parking" title="Автостоянка 24">
+            <svg width="317" height="55">
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__tels">
+          <a class="header__tel tel" href="tel:+78129113939" title="Телефон Автостоянка 24">+7 (812) 911-39-39</a>
+          <button class="header__callback open-modal" type="button" data-modal="callback">Заказать обратный
+            звонок</button>
+        </div>
+      </div>
+      <nav class="header__lower nav">
+
+        <div class="nav__list hidden">
+          <button class="header__login login"> <svg width="24" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-login"></use>
+            </svg>Войти</button>
+          <a class="nav__tel tel" href="tel:+78129113939" title="Телефон Автостоянка 24">+7 (812) 911-39-39</a>
+          <a class="nav__item" onclick="console.log(this)" href="#catalog" title="Каталог автостоянок">Каталог
+            автостоянок</a>
+          <a class="nav__item" onclick="console.log(event)" href="/parking/service.html"
+            title="Дополнительные услуги">Дополнительные
+            услуги</a>
+          <a class="nav__item" onclick="console.log(this)" href="/parking/gallery.html"
+            title="Фотогалерея">Фотогалерея</a>
+          <a class="nav__item" onclick="console.log(this)" href="/parking/about.html" title="О компании">О компании</a>
+          <a class="nav__item" onclick="console.log(this)" href="/parking/contacts.html" title="Контакты">Контакты</a>
+        </div>
+        <div class="overlay hidden">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="banner section">
+      <div class="container">
+        <div class="banner__container">
+          <h1 class="banner__title">Автостоянки в Санкт-Петербурге</h1>
+          <button class="banner__button button">Найти</button>
+        </div>
+      </div>
+    </section>
+    <section class="choose-main container section" id="catalog">
+      <h2 class="title">Выберите свою стоянку</h2>
+      <div class="choose-main__list">
+        <a class="choose-main__link" href="parking/parking.html" title="Паркинги Всеволожского района">
+          <h3 class="choose-main__title">
+            <span>Стоянки</span> Всеволожского района
+          </h3>
+          <p class="choose-main__text">
+            <span class="choose-main__span">
+              Центральная 15Б,
+            </span>
+            <span class="choose-main__span">
+              Центральная 35
+            </span>
+          </p>
+        </a>
+        <a class="choose-main__link" href="parking/parking.html" title="Паркинги Всеволожского района">
+          <h3 class="choose-main__title">
+            <span>Стоянкa</span> Кудровский проезд 3
+          </h3>
+        </a>
+        <a class="choose-main__link" href="parking/parking.html" title="Паркинги Всеволожского района">
+          <h3 class="choose-main__title">
+            <span>Стоянкa</span> Промышленная 3А
+          </h3>
+
+        </a>
+        <a class="choose-main__link" href="parking/parking.html" title="Паркинги Всеволожского района">
+          <h3 class="choose-main__title">
+            <span>Стоянкa</span> Центральная 54
+          </h3>
+
+        </a>
+        <a class="choose-main__link" href="parking/parking.html" title="Паркинги Всеволожского района">
+          <h3 class="choose-main__title">
+            <span>Стоянкa</span> Центральная 54
+          </h3>
+
+        </a>
+      </div>
+    </section>
+    <section class="map container section">
+      <h2 class="title">Карта стоянок</h2>
+      <div class="map__map yandex-map">
+        <div class="iframe" data-map="map"></div>
+      </div>
+      <!-- отсюда берется информация для всплывющих окон на карте -->
+      <div class="visually-hidden">
+        <div class="parking-info p1">
+          <span class="parking-info__coords">59.895434, 30.495657</span>
+          <span class="parking-info__name">Кудровский проезд 3</span>
+          <span class="parking-info__free">254</span>
+          <span class="parking-info__taken">345</span>
+          <span class="parking-info__price">от 2300 до 3500 &#8381;</span>
+          <span class="parking-info__link">/</span>
+        </div>
+        <div class="parking-info p2">
+          <span class="parking-info__coords">59.908072, 30.505773</span>
+          <span class="parking-info__name">Центральная 15Б</span>
+          <span class="parking-info__free">354</span>
+          <span class="parking-info__taken">145</span>
+          <span class="parking-info__price">от 2300 до 3500 &#8381;</span>
+          <span class="parking-info__link">/</span>
+        </div>
+        <div class="parking-info p3">
+          <span class="parking-info__coords">59.903716, 30.504973</span>
+          <span class="parking-info__name">Центральная 35</span>
+          <span class="parking-info__free">154</span>
+          <span class="parking-info__taken">145</span>
+          <span class="parking-info__price">от 2300 до 3500 &#8381;</span>
+          <span class="parking-info__link">/</span>
+        </div>
+        <div class="parking-info p4">
+          <span class="parking-info__coords">59.899884, 30.501568</span>
+          <span class="parking-info__name">Промышленная 3А</span>
+          <span class="parking-info__free">284</span>
+          <span class="parking-info__taken">395</span>
+          <span class="parking-info__price">от 2300 до 3500 &#8381;</span>
+          <span class="parking-info__link">/</span>
+        </div>
+        <div class="parking-info p5">
+          <span class="parking-info__coords">59.895917, 30.507021</span>
+          <span class="parking-info__name">Центральная 54</span>
+          <span class="parking-info__free">564</span>
+          <span class="parking-info__taken">45</span>
+          <span class="parking-info__price">от 2300 до 3500 &#8381;</span>
+          <span class="parking-info__link">/</span>
+        </div>
+      </div>
+    </section>
+    <section class="order container section">
+      <h2 class="title">Порядок оформления</h2>
+      <ul class="order__list">
+        <li class="order__item">
+          <div class="order__number">1</div>
+          <div class="order__text">Сначала необходимо выбрать парковочное место. Это можно сделать в клиентском зале
+            нашего офиса или на данном сайте. Для бронирования места на сайте необходимо выбрать Стоянка и понравившееся
+            свободное место.
+          </div>
+        </li>
+        <li class="order__item">
+          <div class="order__number">2</div>
+          <div class="order__text">Для бронирования места на сайте необходимо выбрать Стоянка и понравившееся свободное
+            место.
+
+          </div>
+        </li>
+        <li class="order__item">
+          <div class="order__number">3</div>
+          <div class="order__text">После отправки заявки место считается заброннированным и сохраняется в этом статусе в
+            течение 3 дней.
+          </div>
+        </li>
+        <li class="order__item">
+          <div class="order__number">4</div>
+          <div class="order__text">Получив вашу заявку с вами свяжется менеджер для уточнения деталей заключения
+            договора аренды.
+
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__upper">
+        <div class="footer__section">
+          <a class="footer__logo" href="/" title="Автостоянка 24">
+            <svg width="313" height="51">
+              <use xlink:href="img/sprite_auto.svg#icon-logo-white"></use>
+            </svg>
+          </a>
+          <a class="footer__tel tel" href="tel:+78129113939" title="Телефон Автостоянка 24">+7 (812) 911-39-39</a>
+          <button class="footer__callback open-modal" type="button" data-modal="callback">Заказать обратный
+            звонок</button>
+        </div>
+
+        <nav class="footer__section footer-nav">
+          <div class="footer-nav__list">
+            <a class="footer-nav__item" href="#catalog" title="Каталог автостоянок">Каталог автостоянок</a>
+            <a class="footer-nav__item" href="/parking/service.html" title="Дополнительные услуги">Дополнительные
+              услуги</a>
+            <a class="footer-nav__item" href="/parking/gallery.html" title="Фотогалерея">Фотогалерея</a>
+            <a class="footer-nav__item" href="/parking/contacts.html" title="Контакты">Контакты</a>
+          </div>
+        </nav>
+        <div class="footer__section">
+
+          <a class="footer__link" href="#" title="Политика конфиденциальности">Политика конфиденциальности</a>
+          <a class="footer__link" href="#" title="Условия бронирования">Условия бронирования</a>
+        </div>
+      </div>
+      <div class="footer__lower">
+        Copyright © 2021 Все права защищены
+      </div>
+    </div>
+
+  </footer>
+  <!-- при нажатии на получить код добавляется класс sent  к modal -->
+  <div class="modal login-modal hidden">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+          <svg width="26" height="26">
+            <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="one">
+          <h2 class="modal__title">Войдите или зарегистрируйтесь</h2>
+          <form class="review-modal__form modal__form">
+            <label class="review-modal__label modal__label">
+              <span class="visually-hidden">Телефон</span>
+              <input class="modal__input" type="tel" placeholder="Телефон">
+            </label>
+
+            <input class="modal__submit modal__submit--number button" type="submit" value="Получить код">
+          </form>
+        </div>
+        <div class="two">
+          <h2 class="modal__title">Введите код</h2>
+          <form class="review-modal__form modal__form">
+            <label class="review-modal__label modal__label">
+              <span class="visually-hidden">Код из СМС</span>
+              <input class="modal__input" type="text">
+            </label>
+
+            <input class="modal__submit modal__submit--code disabled button" type="submit" value="Зарегистрироваться">
+            <button class="modal__send-again" type="button">Отправить СМС повторно</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal order-modal hidden">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+          <svg width="26" height="26">
+            <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="one">
+          <h2 class="modal__title">Войдите или зарегистрируйтесь</h2>
+          <form class="review-modal__form modal__form">
+            <label class="review-modal__label modal__label">
+              <span class="visually-hidden">Телефон</span>
+              <input class="modal__input" type="tel" placeholder="Телефон">
+            </label>
+
+            <input class="modal__submit modal__submit--number button" type="submit" value="Получить код">
+          </form>
+        </div>
+        <div class="two">
+          <h2 class="modal__title">Введите код</h2>
+          <form class="review-modal__form modal__form">
+            <label class="review-modal__label modal__label">
+              <span class="visually-hidden">Код из СМС</span>
+              <input class="modal__input" type="text">
+            </label>
+
+            <input class="modal__submit modal__submit--code disabled button" type="submit" value="Зарегистрироваться">
+            <button class="modal__send-again" type="button">Отправить СМС повторно</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal hidden" data-modal-content="callback">
+    <div class="modal__overlay">
+      <div class="modal__container">
+        <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+          <svg width="26" height="26">
+            <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="one">
+          <h2 class="modal__title">Заказать обратный звонок</h2>
+          <form class="review-modal__form modal__form">
+            <label class="review-modal__label modal__label">
+              <span class="visually-hidden">Имя</span>
+              <input class="modal__input" type="text" placeholder="Ваше имя">
+            </label>
+            <label class="review-modal__label modal__label">
+              <span class="visually-hidden">Телефон</span>
+              <input class="modal__input" type="tel" placeholder="Телефон">
+            </label>
+
+            <input class="modal__submit modal__submit--callback button" type="submit" value="Заказать">
+          </form>
+        </div>
+        <div class="two">
+          <h2 class="modal__title">Введите код</h2>
+          <form class="review-modal__form modal__form">
+            <label class="review-modal__label modal__label">
+              <span class="visually-hidden">Код из СМС</span>
+              <input class="modal__input" type="text">
+            </label>
+
+            <input class="modal__submit modal__submit--code disabled button" type="submit" value="Зарегистрироваться">
+            <button class="modal__send-again" type="button">Отправить СМС повторно</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

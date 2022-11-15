@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Автостоянка 24">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Автостоянка 24</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/play-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/play-bold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__upper">
+        <div class="header__left">
+          <button class="header__burger" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="header__cross hidden" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <a class="header__logo" href="/parking" title="Автостоянка 24">
+            <svg width="317" height="55">
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__tels">
+          <a class="header__tel tel" href="tel:+78129113939" title="Телефон Автостоянка 24">+7 (812) 911-39-39</a>
+          <button class="header__callback" type="button">Заказать обратный звонок</button>
+        </div>
+      </div>
+      <nav class="header__lower nav">
+
+        <div class="nav__list hidden">
+          <button class="header__login login"> <svg width="24" height="24">
+              <use xlink:href="img/sprite_auto.svg#icon-login"></use>
+            </svg>Войти</button>
+          <a class="nav__tel tel" href="tel:+78129113939" title="Телефон Автостоянка 24">+7 (812) 911-39-39</a>
+          <a class="nav__item" onclick="console.log(this)" href="parking/#catalog" title="Каталог автостоянок">Каталог
+            автостоянок</a>
+          <a class="nav__item" onclick="console.log(event)" href="/parking/service.html"
+            title="Дополнительные услуги">Дополнительные
+            услуги</a>
+          <a class="nav__item" onclick="console.log(this)" href="/parking/gallery.html"
+            title="Фотогалерея">Фотогалерея</a>
+          <a class="nav__item" onclick="console.log(this)" href="/parking/about.html" title="О компании">О компании</a>
+          <a class="nav__item" onclick="console.log(this)" href="/parking/contacts.html" title="Контакты">Контакты</a>
+        </div>
+        <div class="overlay hidden">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="breadcrumbs" style="background-image: url('img/parking.jpg')">
+      <div class="container">
+        <ul class="breadcrumbs__list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumbs__item breadcrumbs__item--back">
+            <a href="/shop/verhnyaya-odezhda/">Назад</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--home" itemprop="itemListElement" itemscope=""
+            itemtype="https://schema.org/ListItem">
+            <a href="/" title="Главная" itemprop="item">
+              <span itemprop="name">Главная</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a href="parking/#catalog" title="Каталог товаров" itemprop="item"><span itemprop="name">Каталог
+                товаров</span></a>
+            <meta itemprop="position" content="2">
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <section class="gallery container section">
+      <h1 class="title">Галерея</h1>
+      <div class="gallery__panes">
+        <button class="gallery__pane tab-pane active" data-tab-content="1">Центральная 15Б </button>
+        <button class="gallery__pane tab-pane" data-tab-content="2">Центральная 15Б </button>
+        <button class="gallery__pane tab-pane" data-tab-content="3">Центральная 15Б </button>
+      </div>
+      <div class="gallery__info">
+        <div class="gallery__nav nav-tab" data-tab="1">
+          <div class="gallery__items lightgallery">
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+          </div>
+        </div>
+        <div class="gallery__nav nav-tab hidden" data-tab="2">
+          <div class="gallery__items lightgallery">
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+          </div>
+        </div>
+        <div class="gallery__nav nav-tab hidden" data-tab="3">
+          <div class="gallery__items lightgallery">
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+            <a class="gallery__item" href="img/gallery-1.jpg">
+              <img alt=".." src="img/gallery-1.jpg" width="360" height="261">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__upper">
+        <div class="footer__section">
+          <a class="header__logo" href="/parking" title="Автостоянка 24">
+            <svg width="313" height="51">
+              <use xlink:href="img/sprite_auto.svg#icon-logo-white"></use>
+            </svg>
+          </a>
+          <a class="footer__tel tel" href="tel:+78129113939" title="Телефон Автостоянка 24">+7 (812) 911-39-39</a>
+          <button class="footer__callback" type="button">Заказать обратный звонок</button>
+        </div>
+
+        <nav class="footer__section footer-nav">
+          <div class="footer-nav__list">
+            <a class="footer-nav__item" href="#" title="Каталог автостоянок">Каталог автостоянок</a>
+            <a class="footer-nav__item" href="/parking/service.html" title="Дополнительные услуги">Дополнительные
+              услуги</a>
+            <a class="footer-nav__item" href="/parking/gallery.html" title="Фотогалерея">Фотогалерея</a>
+            <a class="footer-nav__item" href="/parking/contacts.html" title="Контакты">Контакты</a>
+          </div>
+        </nav>
+        <div class="footer__section">
+          <a class="footer__link" href="#" title="Условия бронирования">Условия бронирования</a>
+          <a class="footer__link" href="#" title="Политика конфиденциальности">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="footer__lower">
+        Copyright © 2021 Все права защищены
+      </div>
+    </div>
+    <div class="modal login-modal hidden">
+      <div class="modal__overlay">
+        <div class="modal__container">
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+            <svg width="26" height="26">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="one">
+            <h2 class="modal__title">Войдите или зарегистрируйтесь</h2>
+            <form class="review-modal__form modal__form">
+              <label class="review-modal__label modal__label">
+                <span class="visually-hidden">Телефон</span>
+                <input class="modal__input" type="tel" placeholder="Телефон">
+              </label>
+
+              <input class="modal__submit modal__submit--number button" type="submit" value="Получить код">
+            </form>
+          </div>
+          <div class="two">
+            <h2 class="modal__title">Введите код</h2>
+            <form class="review-modal__form modal__form">
+              <label class="review-modal__label modal__label">
+                <span class="visually-hidden">Код из СМС</span>
+                <input class="modal__input" type="text">
+              </label>
+
+              <input class="modal__submit modal__submit--code disabled button" type="submit" value="Зарегистрироваться">
+              <button class="modal__send-again" type="button">Отправить СМС повторно</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="modal order-modal hidden">
+      <div class="modal__overlay">
+        <div class="modal__container">
+          <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
+            <svg width="26" height="26">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+          <h2 class="modal__title">Бронирование выбранных мест</h2>
+          <p class="modal__text">Для того чтобы оплатить заказ нужно <button class="login" type="button">войти в личный
+              кабинет</button> или <button class="login" type="button">зарегистрироваться</button></p>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="js/vendors.js "></script>
+  <script src="js/main.js "></script>
+
+</body>
+
+</html>
